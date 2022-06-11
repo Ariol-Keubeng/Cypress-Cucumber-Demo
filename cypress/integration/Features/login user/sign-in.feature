@@ -5,14 +5,13 @@ Feature: Login
     Background:
         Given I open the "login" page
 
-
+    @focus 
     Scenario: valid credentials
         Then I type my "email"
         Then I type my "password"
         Then I click the "login" button
         Then "home" page opens
 
-    @focus
     Scenario: blank email and blank password
         Then I click the "login" button
         Then Error "enter email" shows

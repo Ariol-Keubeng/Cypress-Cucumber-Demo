@@ -3,7 +3,7 @@
 import { Given, Then } from "cypress-cucumber-preprocessor/steps";
 
 Then(`I type my {string}`, (field) => {
-  const id = Math.floor(Math.random() * 10)
+  const id = Math.floor(Math.random() * 9)
 
   cy.fixture("users").then((users) => {
     cy.get(`[data-test=${field}]`)
@@ -14,7 +14,7 @@ Then(`I type my {string}`, (field) => {
   });
 })
 
-Given("form is cleared", () => {
+Given("login form is cleared", () => {
   cy.get('[data-test="email"]')
     .clear()
     .should('have.value', '')
