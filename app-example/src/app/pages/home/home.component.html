@@ -1,0 +1,11 @@
+<div class="home">
+    <div style="background: gainsboro;">
+        <h1>Welcome to the Cypress-Cucumber Demo App</h1>
+    </div><br><br>
+
+    <div *ngFor="let product of products" class="content">
+        <div class="item" routerLink="/details" [state]="product" >
+            <h3>{{product.title}}</h3>
+        </div>
+    </div>
+</div>
