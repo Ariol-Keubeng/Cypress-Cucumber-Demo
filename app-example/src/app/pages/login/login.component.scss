@@ -1,0 +1,19 @@
+.login {
+    padding-top: 24px;
+  
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  
+    button {
+      margin-top: 70px;
+      height: 45px;
+      min-width: 190px;
+      font-size: 30px;
+    }
+  
+    input {
+      width: 250px;
+    }
+  }
+  
