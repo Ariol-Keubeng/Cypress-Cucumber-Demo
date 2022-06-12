@@ -4,6 +4,7 @@ import { Given, Then } from "cypress-cucumber-preprocessor/steps";
 
 Then(`I type my {string}`, (field) => {
   const id = Math.floor(Math.random() * 9)
+  cy.log(id)
 
   cy.fixture("users").then((users) => {
     cy.get(`[data-test=${field}]`)

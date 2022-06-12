@@ -5,7 +5,7 @@ Feature: Login
     Background:
         Given I open the "login" page
 
-    @focus 
+    @focus
     Scenario: valid credentials
         Then I type my "email"
         Then I type my "password"
@@ -28,6 +28,9 @@ Feature: Login
 
     @ignore
     Scenario: wrong email format
+
+    @ignore
+    Scenario: wrong email
 
     @ignore
     Scenario: wrong password min length

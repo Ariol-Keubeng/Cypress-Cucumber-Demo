@@ -6,6 +6,7 @@ Feature: Add product
         Given user is logged in 
         And I open the "admin" page
         Then "admin" page opens
+        Then go back home
 
   
 
